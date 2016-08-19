@@ -31,7 +31,7 @@ $sql = "DELETE FROM " . $prefix . "woocommerce_order_itemmeta";
 if ($conn->query($sql) === TRUE) {
     echo "Deleted woocommerce_order_itemmeta successfully. " . PHP_EOL;
 } else {
-    echo "Unable to Delete WooCommerce_Order_ItemMeta [Eroror:2] " . $conn->error;
+    echo "Unable to Delete WooCommerce_Order_ItemMeta [Error:2] " . $conn->error;
 }
 
 
@@ -41,7 +41,7 @@ $sql = "DELETE FROM " . $prefix . "woocommerce_order_items";
 if ($conn->query($sql) === TRUE) {
     echo "Deleted woocommerce_order_items successfully. " . PHP_EOL;
 } else {
-    echo "Unable to Delete WooCommerce_Order_Items [Eroror:3] " . $conn->error;
+    echo "Unable to Delete WooCommerce_Order_Items [Error:3] " . $conn->error;
 }
 
 
