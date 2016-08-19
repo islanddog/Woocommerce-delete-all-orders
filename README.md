@@ -1,5 +1,5 @@
 # Delete all Woocommerce orders
-Delete all your Woocommerce orders with this script. Use at own risk
+Will allow a WordPress configured panel (ie- MyRubis) to delete all orders on WooCommerce 2.6.4. This script might continue to work in future revisisions though has not been tested. This is useful for situations in which you want to do testing and start fresh on a live environment. 
 
 ## I just want the SQL-queries
 Here you go!
