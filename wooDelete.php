@@ -14,24 +14,24 @@ $prefix = "wp_";
 
 // Database infos here
 $host = "localhost";
-$username = "user";
-$password = "password";
-$db = "dbname";
+$username = "askronco";
+$password = "askronco";
+$db = "askronco";
 
 $conn = new mysqli($host, $username, $password, $db);
 
 
 if ($conn->connect_error) {
-    die("Whoops: " . $conn->connect_error);
+    die("Please enter the correct Database and User Information [Error:1] " . $conn->connect_error);
 } 
 
 
 $sql = "DELETE FROM " . $prefix . "woocommerce_order_itemmeta";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Deleted woocommerce_order_itemmeta " . PHP_EOL;
+    echo "Deleted woocommerce_order_itemmeta successfully. " . PHP_EOL;
 } else {
-    echo "Whoops: " . $conn->error;
+    echo "Unable to Delete WooCommerce_Order_ItemMeta [Eroror:2] " . $conn->error;
 }
 
 
@@ -39,9 +39,9 @@ if ($conn->query($sql) === TRUE) {
 $sql = "DELETE FROM " . $prefix . "woocommerce_order_items";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Deleted woocommerce_order_items" . PHP_EOL;
+    echo "Deleted woocommerce_order_items successfully. " . PHP_EOL;
 } else {
-    echo "Whoops: " . $conn->error;
+    echo "Unable to Delete WooCommerce_Order_Items [Eroror:3] " . $conn->error;
 }
 
 
